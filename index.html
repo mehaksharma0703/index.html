@@ -1,0 +1,62 @@
+!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta names="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+	@media (min-width: 465px){
+	.container{
+		display: flex;
+	}
+}
+
+.container div{
+	border: 1px solid black;
+	padding: 10px;
+	justify-content: space-between;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	
+    width: 100%;
+    background-color: grey;
+}
+
+.box-1{
+	flex: 2;
+	order: 2;
+}
+
+.box-2{
+	flex: 1;
+	order: 1;
+	
+}
+
+.box-3{
+	flex: 1;
+	order: 3;
+}
+</style>
+</head>
+<body>
+	<h1 style="text-align: center;">Three monuments of India</h1>
+	<div class="container">
+		<div class box-1>
+			<h1>Taj Mahal</h1>
+			    <p>Taj Mahal, Agra is a beautiful white marble Monument on the banks of the holy river Yamuna in the state of Uttar Pradesh.</p>
+		</div>
+		<div class="box-2">
+			<h1>Mysore palace</h1>
+			<p>Mysore Palace, Mysore.The Palace of Mysore is the most famous historical monument, located in the city of Mysore in Karnataka and one of the most visited monuments in India.</p>
+		</div>
+		<div class="box-3">
+			<h1>Harmandir sahib</h1>
+			<p>Harmandir Sahib, Amritsar.The Golden Temple is known as Harmandir Sahib is a Sikh Gurdwara located in the Amritsar, Punjab.</p>
+		</div>
+	</div>
+</body>
+</html>
